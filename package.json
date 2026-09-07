@@ -57,13 +57,13 @@
     "@anthropic-ai/sdk": "^0.40.0",
     "@clack/prompts": "^0.9.0",
     "@modelcontextprotocol/sdk": "^1.10.0",
-    "better-sqlite3": "^11.8.0",
+    "better-sqlite3": "^13.0.3",
     "cli-table3": "^0.6.5",
     "picocolors": "^1.1.0",
     "zod": "^3.24.0"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.12",
+    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^20.17.0",
     "eslint": "^9.18.0",
     "prettier": "^3.4.0",
@@ -72,5 +72,12 @@
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.20.0",
     "vitest": "^2.1.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@13.0.3": true,
+    "esbuild@0.27.7": true,
+    "esbuild@0.28.1": true,
+    "esbuild@0.21.5": true,
+    "fsevents@2.3.3": true
   }
 }
