@@ -4,7 +4,7 @@ import { readStore } from './store.js';
 import { DEFAULT_EMBED_MODEL } from './search/embedder.js';
 
 /** Documents inside this reMarkable folder (recursively) are the ones we index. */
-export const DEFAULT_BRAIN_FOLDER = '/Brain';
+export const DEFAULT_BRAIN_FOLDER = '/Work';
 export const HARD_EXCLUDE_PATTERNS: RegExp[] = [/^\./, /private/i, /noindex/i];
 
 export interface Config {

@@ -10,11 +10,11 @@ import {
 } from '../src/config.js';
 
 describe('config', () => {
-  test('defaults home to ~/.rm-brain, folder to /Brain, model to sonnet-5', () => {
+  test('defaults home to ~/.rm-brain, folder to /Work, model to sonnet-5', () => {
     const cfg = loadConfig({ HOME: '/home/x' } as NodeJS.ProcessEnv);
     expect(cfg.home).toBe('/home/x/.rm-brain');
     expect(cfg.dbPath).toBe('/home/x/.rm-brain/db.sqlite');
-    expect(cfg.brainFolder).toBe('/Brain');
+    expect(cfg.brainFolder).toBe('/Work');
     expect(cfg.rmapiBin).toBe('rmapi');
     expect(cfg.anthropicModel).toBe('claude-sonnet-5');
   });

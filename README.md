@@ -204,7 +204,7 @@ All config is via environment variables (env wins) or the saved store (`~/.rm-br
 | Env var | Default | Purpose |
 | --- | --- | --- |
 | `RM_BRAIN_HOME` | `~/.rm-brain` | Where all local data lives |
-| `RM_BRAIN_FOLDER` | `/Brain` | reMarkable folder whose notebooks get indexed (case-insensitive) |
+| `RM_BRAIN_FOLDER` | `/Work` | reMarkable folder whose notebooks get indexed (case-insensitive) |
 | `RMAPI_BIN` | `rmapi` | Path/name of the rmapi binary (ddvk sync15 build) |
 | `RMC_BIN` | `rmc` | Path/name of the rmc renderer |
 | `RSVG_BIN` | `rsvg-convert` | Path/name of rsvg-convert |
