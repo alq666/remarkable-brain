@@ -22,6 +22,14 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   via `RM_BRAIN_SEARCH` (`auto` | `keyword`); lives behind the existing `SearchProvider` seam, so
   the web app and MCP tools are unchanged.
 
+### Fixed
+
+- **Rendering pages containing `&` or `<` in the handwriting** — rmc's SVG exporter interpolates
+  notebook text into the XML without escaping, so a literal `&` (e.g. `G&A`) or `<` in the notes
+  produced invalid XML that `rsvg-convert` rejected with "EntityRef: expecting ';'". The renderer
+  now sanitizes each page's SVG before conversion, escaping bare ampersands and `<` inside
+  `<text>` content while leaving well-formed entity references and all other markup untouched.
+
 ## [0.2.0] - 2026-07-10
 
 ### Added
